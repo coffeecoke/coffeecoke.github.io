@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hello | 欢乐韬韬</title>
+  <title>jquery笔记 | 欢乐韬韬</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要:">
+  <meta name="description" content="摘要:系统学习jquery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello">
-<meta property="og:url" content="http://coffeecoke.github.io/2015/07/01/hello/index.html">
+<meta property="og:title" content="jquery笔记">
+<meta property="og:url" content="http://coffeecoke.github.io/2015/07/01/jquery复习总结/index.html">
 <meta property="og:site_name" content="欢乐韬韬">
-<meta property="og:description" content="摘要:">
-<meta property="og:updated_time" content="2016-02-26T14:13:18.997Z">
+<meta property="og:description" content="摘要:系统学习jquery">
+<meta property="og:updated_time" content="2016-02-27T16:44:09.450Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello">
-<meta name="twitter:description" content="摘要:">
+<meta name="twitter:title" content="jquery笔记">
+<meta name="twitter:description" content="摘要:系统学习jquery">
   
     <link rel="alternative" href="/atom.xml" title="欢乐韬韬" type="application/atom+xml">
   
@@ -244,10 +244,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-jquery复习总结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/01/hello/" class="article-date">
+      <a href="/2015/07/01/jquery复习总结/" class="article-date">
       <time datetime="2015-07-01T14:37:23.000Z" itemprop="datePublished">2015-07-01</time>
 </a>
     </div>
@@ -261,7 +261,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hello
+      jquery笔记
     </h1>
   
 
@@ -270,13 +270,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/日志/">日志</a><a class="article-category-link" href="/categories/日志/二级目录/">二级目录</a>
+    <a class="article-category-link" href="/categories/web前端/">web前端</a><a class="article-category-link" href="/categories/web前端/jquery/">jquery</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hello/">hello</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery复习总结/">jquery复习总结</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -286,8 +286,36 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>摘要:<br><a id="more"></a><br>正文:</p>
-
+        <p>摘要:系统学习jquery<br><a id="more"></a></p>
+<p>正文:</p>
+<pre><code># JQUERY：
+       1. jQuery的美元符号$有什么作用？
+      2. jQuery 库中的 $() 是什么?
+        答案：$() 是 jQuery库中的工厂函数，其作用可以定义选择器获取页面元素、创建页面元素及将DOM对象转换为jQuery对象
+      3. $(document).ready() 是个什么函数？为什么要用它？
+       4. window.onload 事件和 jQuery ready 函数有何不同？
+       5. $(this) 和 this 关键字在 jQuery 中有何不同？
+       6. 使用 CDN 加载 jQuery 库的主要优势是什么 ?
+         * 加载速度一般都会比本地加载速度快
+          * 节省服务器的带宽，减少服务器的压力
+          * CDN提供缓存服务，第一次加载之后，不需要再次加载
+    7. 当CDN上的jQuery文件不可用时，该怎么办？
+              如果这些CDN上的jQuery服务不可用，我们还可以通过以下代码来切换到本地服务器的jQuery版本
+              `&lt;script src=&quot;http://cdn.bootcss.com/jquery/1.11.3/jquery.js&quot;&gt;&lt;/script&gt;
+             &lt;script&gt;
+                if (typeof jQuery == &apos;undefined&apos;) {
+                    document.write(unescape(&quot;%3Cscript src=&apos;/Script/jquery-1.4.1.min.js&apos;  %3E%3C/script%3E&quot;));
+                }
+             &lt;/script&gt;`
+       8.  jQuery 中的方法链是什么？使用方法链有什么好处？
+       9. jQuery中的.get()、[]和eq()方法的区别？
+              * get()和[]两者都是将jQuery对象转换成DOM对象
+             * get()方法是由jQuery提供的方法
+            * []是利用jQuery对象是类数组对象
+              * eq()方法返回的还是jQuery对象
+       10. bind()、live()、one()和on()的区别？
+       11. jQuery与其他JS库共存问题？
+</code></pre>
       
     </div>
     
@@ -295,13 +323,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/07/01/hello/">hello</a></p>
+        <p><span>本文标题:</span><a href="/2015/07/01/jquery复习总结/">jquery笔记</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Ben ben 的个人博客">Ben ben</a></p>
         <p><span>发布时间:</span>2015年07月01日 - 22时37分</p>
-        <p><span>最后更新:</span>2016年02月26日 - 22时13分</p>
+        <p><span>最后更新:</span>2016年02月28日 - 00时44分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/07/01/hello/" title="hello">http://coffeecoke.github.io/2015/07/01/hello/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://coffeecoke.github.io/2015/07/01/hello/　　作者: Ben ben" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/07/01/jquery复习总结/" title="jquery笔记">http://coffeecoke.github.io/2015/07/01/jquery复习总结/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://coffeecoke.github.io/2015/07/01/jquery复习总结/　　作者: Ben ben" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -314,12 +342,12 @@
 
     <nav id="article-nav">
         
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/07/01/jquery复习总结/">
-                    jquery笔记
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/07/01/hello/">
+                    hello
                 </a>
             </div>
+        
         
     </nav>
 
@@ -396,15 +424,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2015/07/01/hello/" title="上一篇: hello">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/07/01/jquery复习总结/" title="下一篇: jquery笔记">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
 

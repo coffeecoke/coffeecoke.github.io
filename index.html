@@ -24,6 +24,8 @@
       <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
   
   
+      <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -67,6 +69,8 @@
         
         <p class="header-subtitle">Not impossible, just think</p>
         
+        
+        <form><input type="text" class="search" placeholder=" Search..."></form>
                 
 
 
@@ -131,11 +135,17 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                                <li id="Email"><a class="Email" target="_blank" href="/972041969@qq.com" title="Email"></a></li>
                             
                                 <li id="GitHub"><a class="GitHub" target="_blank" href="/#" title="GitHub"></a></li>
                             
                                 <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="/zhihu" title="知乎"></a></li>
+                            
+                                <li id="网易云音乐"><a class="网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a></li>
+                            
+                                <li id="QQ"><a class="QQ" target="_blank" href="/972041969" title="QQ"></a></li>
                             
                         </ul>
                     </nav>
@@ -211,11 +221,17 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:123@123.com" title="Email"></a></li>
+                                <li id="Email"><a class="Email" target="_blank" href="/972041969@qq.com" title="Email"></a></li>
                             
                                 <li id="GitHub"><a class="GitHub" target="_blank" href="/#" title="GitHub"></a></li>
                             
                                 <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                                <li id="知乎"><a class="知乎" target="_blank" href="/zhihu" title="知乎"></a></li>
+                            
+                                <li id="网易云音乐"><a class="网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a></li>
+                            
+                                <li id="QQ"><a class="QQ" target="_blank" href="/972041969" title="QQ"></a></li>
                             
                         </ul>
             </nav>
@@ -338,7 +354,7 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 5;
+                var backgroundnum = 10;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
@@ -362,6 +378,8 @@
     })
 </script>
 
+
+    <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

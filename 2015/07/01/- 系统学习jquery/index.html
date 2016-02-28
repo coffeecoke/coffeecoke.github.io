@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>jquery笔记 | 欢乐韬韬</title>
+  <title>jquery常见知识点总结 | 欢乐韬韬</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="摘要:系统学习jquery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jquery笔记">
-<meta property="og:url" content="http://coffeecoke.github.io/2015/07/01/jquery复习总结/index.html">
+<meta property="og:title" content="jquery常见知识点总结">
+<meta property="og:url" content="http://coffeecoke.github.io/2015/07/01/- 系统学习jquery/index.html">
 <meta property="og:site_name" content="欢乐韬韬">
 <meta property="og:description" content="摘要:系统学习jquery">
-<meta property="og:updated_time" content="2016-02-27T16:44:09.450Z">
+<meta property="og:updated_time" content="2016-02-28T04:33:24.501Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jquery笔记">
+<meta name="twitter:title" content="jquery常见知识点总结">
 <meta name="twitter:description" content="摘要:系统学习jquery">
   
     <link rel="alternative" href="/atom.xml" title="欢乐韬韬" type="application/atom+xml">
@@ -156,7 +156,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/hello/" style="font-size: 10px;">hello</a> <a href="/tags/jquery复习总结/" style="font-size: 10px;">jquery复习总结</a>
+                        <a href="/tags/hello/" style="font-size: 10px;">hello</a> <a href="/tags/jquery常见知识点总结/" style="font-size: 10px;">jquery常见知识点总结</a>
                     </div>
                 </section>
                 
@@ -244,10 +244,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-jquery复习总结" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-- 系统学习jquery" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/01/jquery复习总结/" class="article-date">
+      <a href="/2015/07/01/- 系统学习jquery/" class="article-date">
       <time datetime="2015-07-01T14:37:23.000Z" itemprop="datePublished">2015-07-01</time>
 </a>
     </div>
@@ -261,7 +261,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      jquery笔记
+      jquery常见知识点总结
     </h1>
   
 
@@ -276,7 +276,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery复习总结/">jquery复习总结</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery常见知识点总结/">jquery常见知识点总结</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -287,35 +287,26 @@
       
           
         <p>摘要:系统学习jquery<br><a id="more"></a></p>
-<p>正文:</p>
-<pre><code># JQUERY：
-       1. jQuery的美元符号$有什么作用？
-      2. jQuery 库中的 $() 是什么?
-        答案：$() 是 jQuery库中的工厂函数，其作用可以定义选择器获取页面元素、创建页面元素及将DOM对象转换为jQuery对象
-      3. $(document).ready() 是个什么函数？为什么要用它？
-       4. window.onload 事件和 jQuery ready 函数有何不同？
-       5. $(this) 和 this 关键字在 jQuery 中有何不同？
-       6. 使用 CDN 加载 jQuery 库的主要优势是什么 ?
-         * 加载速度一般都会比本地加载速度快
-          * 节省服务器的带宽，减少服务器的压力
-          * CDN提供缓存服务，第一次加载之后，不需要再次加载
-    7. 当CDN上的jQuery文件不可用时，该怎么办？
-              如果这些CDN上的jQuery服务不可用，我们还可以通过以下代码来切换到本地服务器的jQuery版本
-              `&lt;script src=&quot;http://cdn.bootcss.com/jquery/1.11.3/jquery.js&quot;&gt;&lt;/script&gt;
-             &lt;script&gt;
-                if (typeof jQuery == &apos;undefined&apos;) {
-                    document.write(unescape(&quot;%3Cscript src=&apos;/Script/jquery-1.4.1.min.js&apos;  %3E%3C/script%3E&quot;));
-                }
-             &lt;/script&gt;`
-       8.  jQuery 中的方法链是什么？使用方法链有什么好处？
-       9. jQuery中的.get()、[]和eq()方法的区别？
-              * get()和[]两者都是将jQuery对象转换成DOM对象
-             * get()方法是由jQuery提供的方法
-            * []是利用jQuery对象是类数组对象
-              * eq()方法返回的还是jQuery对象
-       10. bind()、live()、one()和on()的区别？
-       11. jQuery与其他JS库共存问题？
-</code></pre>
+<hr>
+<p>##JQUERY</p>
+<p>###1. jQuery的美元符号$有什么作用？</p>
+<p>###2. jQuery 库中的 $() 是什么?</p>
+<p>答案：$() 是 jQuery库中的工厂函数，其作用可以定义选择器获取页面元素、创建页面元素及将DOM对象转换为jQuery对象</p>
+<p>###3. $(document).ready() 是个什么函数？为什么要用它？</p>
+<p>###4. window.onload 事件和 jQuery ready 函数有何不同？</p>
+<p>###5. $(this) 和 this 关键字在 jQuery 中有何不同？</p>
+<p>###6. 使用 CDN 加载 jQuery 库的主要优势是什么 ?<br>     <em>加载速度一般都会比本地加载速度快
+     </em>节省服务器的带宽，减少服务器的压力<br>     *CDN提供缓存服务，第一次加载之后，不需要再次加载</p>
+<p>###7. 当CDN上的jQuery文件不可用时，该怎么办？<br>     如果这些CDN上的jQuery服务不可用，我们还可以通过以下代码来切换到本地服务器的jQuery版本<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://cdn.bootcss.com/jquery/1.11.3/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">	<span class="keyword">if</span> (<span class="keyword">typeof</span> jQuery == <span class="string">'undefined'</span>) &#123;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">"%3Cscriptsrc='/Script/jquery-1.4.1.min.js'  %3E%3C/script%3E"</span>));</span><br><span class="line">       	&#125;</span><br><span class="line">   </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>###8.  jQuery 中的方法链是什么？使用方法链有什么好处？</p>
+<p>###9. jQuery中的.get()、[]和eq()方法的区别？</p>
+<pre><code> * get()和[]两者都是将jQuery对象转换成DOM对象
+* get()方法是由jQuery提供的方法
+* []是利用jQuery对象是类数组对象
+ * eq()方法返回的还是jQuery对象
+</code></pre><p>###10. bind()、live()、one()和on()的区别？</p>
+<p>###11. jQuery与其他JS库共存问题？</p>
+
       
     </div>
     
@@ -323,13 +314,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/07/01/jquery复习总结/">jquery笔记</a></p>
+        <p><span>本文标题:</span><a href="/2015/07/01/- 系统学习jquery/">jquery常见知识点总结</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Ben ben 的个人博客">Ben ben</a></p>
         <p><span>发布时间:</span>2015年07月01日 - 22时37分</p>
-        <p><span>最后更新:</span>2016年02月28日 - 00时44分</p>
+        <p><span>最后更新:</span>2016年02月28日 - 12时33分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/07/01/jquery复习总结/" title="jquery笔记">http://coffeecoke.github.io/2015/07/01/jquery复习总结/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://coffeecoke.github.io/2015/07/01/jquery复习总结/　　作者: Ben ben" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/07/01/- 系统学习jquery/" title="jquery常见知识点总结">http://coffeecoke.github.io/2015/07/01/- 系统学习jquery/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://coffeecoke.github.io/2015/07/01/- 系统学习jquery/　　作者: Ben ben" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -436,7 +427,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2015/07/01/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/01/jquery复习总结/">jquery笔记</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2015/07/01/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/01/- 系统学习jquery/">jquery常见知识点总结</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");

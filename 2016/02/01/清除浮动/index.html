@@ -96,7 +96,7 @@
         <h1>清除浮动最佳方法</h1>
         
         <div class="time-info">
-发表于:<time datetime="2016-02-01T12:37:23.000Z" itemprop="datePublished">2016-02-01</time>，更新于:<time datetime="2016-03-08T13:12:07.715Z" itemprop="dateModified">2016-03-08</time>，By <a href="http://coffeecoke.github.io" title="Ben ben">Ben ben</a>
+发表于:<time datetime="2016-02-01T12:37:23.000Z" itemprop="datePublished">2016-02-01</time>，更新于:<time datetime="2016-03-08T13:17:55.463Z" itemprop="dateModified">2016-03-08</time>，By <a href="http://coffeecoke.github.io" title="Ben ben">Ben ben</a>
         </div>
         
         <div class="post-body-inner">
@@ -107,18 +107,19 @@
             
             <p>摘要:各种清除浮动的方法的优缺点,及其最佳实现方法<br><a id="more"></a></p>
 <hr>
-<h3 id="1-额外增加标签的方法"><a href="#1-额外增加标签的方法" class="headerlink" title="1,额外增加标签的方法"></a>1,额外增加标签的方法</h3><p>就是通过在浮动元素末尾增加一个空的标签列如<br>    <code>&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;</code></p>
+<h3 id="1-额外增加标签的方法"><a href="#1-额外增加标签的方法" class="headerlink" title="1,额外增加标签的方法"></a>1,额外增加标签的方法</h3><p>就是通过在浮动元素末尾增加一个空的标签列如<br><code>&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;</code></p>
 <ul>
 <li>优点:通俗易懂,容易掌握</li>
-<li>缺点:可以想象通过此方法，会添加多少无意义的空标签，有违结构与表现的分离，在后期维护中将是噩梦，这是坚决不能忍受的，所以你看了这篇文章之后还是建议不要用了吧。<h3 id="2-父元素设置overflow-hidden"><a href="#2-父元素设置overflow-hidden" class="headerlink" title="2,父元素设置overflow:hidden;"></a>2,父元素设置overflow:hidden;</h3></li>
+<li>缺点:可以想象通过此方法，会添加多少无意义的空标签，有违结构与表现的分离，在后期维护中将是噩梦，这是坚决不能忍受的，所以你看了这篇文章之后还是建议不要用了吧。</li>
+</ul>
+<h3 id="2-父元素设置overflow-hidden"><a href="#2-父元素设置overflow-hidden" class="headerlink" title="2,父元素设置overflow:hidden;"></a>2,父元素设置overflow:hidden;</h3><ul>
 <li>优点:不存在结构和语义化问题，代码量极少</li>
-<li>缺点:内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素；<h3 id="3-给父元素设定高度"><a href="#3-给父元素设定高度" class="headerlink" title="3,给父元素设定高度"></a>3,给父元素设定高度</h3></li>
-<li><p>原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。</p>
-</li>
-<li><p>优点：简单，代码少，容易掌握</p>
-</li>
-<li><p>缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题.</p>
-</li>
+<li>缺点:内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素；</li>
+</ul>
+<h3 id="3-给父元素设定高度"><a href="#3-给父元素设定高度" class="headerlink" title="3,给父元素设定高度"></a>3,给父元素设定高度</h3><ul>
+<li>原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。</li>
+<li>优点：简单，代码少，容易掌握</li>
+<li>缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题.</li>
 </ul>
 <h3 id="4-父元素也设置浮动"><a href="#4-父元素也设置浮动" class="headerlink" title="4,父元素也设置浮动"></a>4,父元素也设置浮动</h3><ul>
 <li>优点：不存在结构和语义化问题，代码量极少。</li>
@@ -130,9 +131,9 @@
 <li><p>优点：结构语义化完全正确，代码量极少</p>
 </li>
 <li><p>缺点：盒模型属性已经改变，由此造成的一系列问题，不推荐使用。</p>
-<h3 id="6-最佳实现方法-利用伪元素"><a href="#6-最佳实现方法-利用伪元素" class="headerlink" title="6,最佳实现方法,利用伪元素"></a>6,最佳实现方法,利用伪元素</h3></li>
+</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.cf</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.cf</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line"><span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line"><span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.cf</span><span class="selector-pseudo">:after</span>&#123;<span class="attribute">clear</span>:both;&#125;</span><br><span class="line"><span class="comment">/* For IE 6/7 (trigger hasLayout) */</span></span><br><span class="line"><span class="selector-class">.cf</span>&#123;<span class="attribute">zoom</span>:<span class="number">1</span>;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-最佳实现方法-利用伪元素"><a href="#6-最佳实现方法-利用伪元素" class="headerlink" title="6,最佳实现方法,利用伪元素"></a>6,最佳实现方法,利用伪元素</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.cf</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.cf</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line"><span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line"><span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.cf</span><span class="selector-pseudo">:after</span>&#123;<span class="attribute">clear</span>:both;&#125;</span><br><span class="line"><span class="comment">/* For IE 6/7 (trigger hasLayout) */</span></span><br><span class="line"><span class="selector-class">.cf</span>&#123;<span class="attribute">zoom</span>:<span class="number">1</span>;&#125;</span><br></pre></td></tr></table></figure>
 <p>上面方法还用到了:before伪元素,其实他是用来防止子元素的margin越界<br>造成的边界重合问题的<br>这是由 Nicolas Gallagher 大湿提出来的,原文:<a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank" rel="external">A new micro clearfix hack</a>，该方法也不存在firefox中空隙的问题。</p>
 <p>原文来自<a href="http://www.cnblogs.com/lhb25/p/story-of-clear-float.html" target="_blank" rel="external">http://www.cnblogs.com/lhb25/p/story-of-clear-float.html</a></p>
 

@@ -19,7 +19,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Archives: 2015 | 欢乐韬韬 | 安静的码农 · 壹個宅男級別的碼農</title>
+    <title>Category: JS | 欢乐韬韬 | 安静的码农 · 壹個宅男級別的碼農</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
@@ -83,7 +83,7 @@
         
     $(function() {
         // page-id...
-        var pageId = "archives/2015/index.html";
+        var pageId = "categories/web前端/JS/index.html";
         pageId = pageId.substr(0, pageId.indexOf("/"));
         if(pageId === "") pageId = "index";
         
@@ -92,44 +92,31 @@
     </script>
 
     
-
 <div class="container archive-body">
     <div class="row">
-        <div class="col-xs-2 well">
-            <h2 class="archive-icon">2015</h2>
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li></ul>
+        <div class="col-xs-3 well">
+            <div class="archive-title" >
+                <h2 class="tag-icon">JS</h2>
+                <div>
+                    <a href="/categories"><< 返回标签列表</a> 
+                </div>
+            </div>
         </div>
         
-        <div class="col-xs-10">
+        <div class="col-xs-9" id="category-list-body">
             
             <article class="post">
                 <div class="jumbotron">
-                    <h1><a href="/2015/08/01/清除浮动/" title="清除浮动最佳方法">清除浮动最佳方法</a></h1>
+                    <h1><a href="/2016/01/17/数组/" title="关于几种数组的常见算法">关于几种数组的常见算法</a></h1>
 
                     
-                        <p>摘要:各种清除浮动的方法的优缺点,及其最佳实现方法</p>
+                        <p>摘要：数组降维，数组去重，数组出现最多的元素几个数</p>
                     
 
                     <p class="say-title">
                         —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
                         <a href="http://coffeecoke.github.io" target="_blank" title="Ben ben">Ben ben</a>
-                        于2015-08-01自豪地以 <a class="article-tag-link" href="/tags/清除浮动的最佳方法/">清除浮动的最佳方法</a> 唠嗑
-                    </p>
-                </div>
-            </article>
-            
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2015/07/01/系统学习jquery/" title="jQuery常见知识点总结">jQuery常见知识点总结</a></h1>
-
-                    
-                        <p>摘要:系统学习jquery</p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://coffeecoke.github.io" target="_blank" title="Ben ben">Ben ben</a>
-                        于2015-07-01自豪地以 <a class="article-tag-link" href="/tags/jquery常见知识点总结/">jquery常见知识点总结</a> 唠嗑
+                        于2016-01-17自豪地以 <a class="article-tag-link" href="/tags/数组算法/">-数组算法</a> 唠嗑
                     </p>
                 </div>
             </article>
@@ -138,14 +125,10 @@
             
         </div>
     </div>
+        
+    <div class="col-xs-19 all-list-box">
+    </div>
 </div>
-
-<script>
-$(function() {
-    $(".archive-list-count").addClass("badge");
-});
-</script>
-
     <footer id="footer">
     <div id="bottom-tip">
         欢乐韬韬 | 安静的码农 —— <small>壹個宅男級別的碼農</small>
